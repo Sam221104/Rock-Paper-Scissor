@@ -3,8 +3,10 @@ body {
    background-color: rgb(25, 25, 25);
     color: white;
     font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    margin: 0;
 
 }  
+
 .title-container{
     display: flex;
     justify-content: center;
@@ -49,6 +51,7 @@ body {
     align-items: center;
     margin-top: 30px;
     margin-bottom: 30px;
+    margin-left: 50px;
 }
 .score{
     margin-top: 30px;
@@ -104,7 +107,8 @@ body{
 }
 .block{
     position: relative;
-    margin: 10% auto 0;
+    margin: 5% auto 0;
+
     width: 50%;
     height: 100%;
     background: linear-gradient(0deg, black, rgb(44,44,44));
@@ -207,6 +211,7 @@ body{
     }
     .block{
         position: relative;
+        
         margin: 10% auto 0;
         width: 80%;
         height: 100%;
@@ -532,5 +537,27 @@ body{
 }
 
 
-
+@media screen and (max-width : 306px) {
+    .block{
+        position: relative;
+        margin: 15% auto 0;
+    
+        width: 98%;
+        height: 100%;
+        background: linear-gradient(0deg, black, rgb(44,44,44));
+        
+    }
+    .js-moves{
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width : 203px) {
+    .block{
+         position: relative;
+         margin: 25% auto 0;
+         width: 98%;
+         height: 100%;
+         background: linear-gradient(0deg, black, rgb(44,44,44));
+        }
+}
 
